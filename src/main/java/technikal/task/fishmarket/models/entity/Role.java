@@ -1,2 +1,6 @@
-package technikal.task.fishmarket.models.entity;public enum Role {
+package technikal.task.fishmarket.models.entity;
+
+public enum Role {
+    ADMIN,
+    USER
 }

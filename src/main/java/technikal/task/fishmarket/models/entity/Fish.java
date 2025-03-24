@@ -1,5 +1,4 @@
-package technikal.task.fishmarket.models;
-
+package technikal.task.fishmarket.models.entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -14,7 +13,6 @@ public class Fish {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
     private String name;
     private double price;
     private Date catchDate;

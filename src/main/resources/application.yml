@@ -1,12 +1,15 @@
 spring:
-    application:
-        name: fishmarket
-    datasource:
-        driver-class-name: com.mysql.cj.jdbc.Driver
-        password: root
-        url: jdbc:mysql://localhost:3306/fishstore
-        username: root
-    jpa:
-        hibernate:
-            ddl-auto: none
-        show-sql: true
+  application:
+    name: fishmarket
+  datasource:
+    url: jdbc:mysql://localhost:3306/fishstore?createDatabaseIfNotExist=true
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration

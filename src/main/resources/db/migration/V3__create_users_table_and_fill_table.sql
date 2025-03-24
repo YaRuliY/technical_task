@@ -6,6 +6,6 @@ CREATE TABLE users
     role     VARCHAR(255) NOT NULL
 );
 
-INSERT INTO users (username, password, role)
+INSERT INTO users (password, username, role)
 VALUES ('$2a$10$0xKaKGcMAn3q/eIbn2t9LO7zfUgkbzFM.1p1euB9SCVX9BmnBdpWe', 'admin', 'ADMIN'),
        ('$2a$10$poKwgC2MH1vOy8PWEddyKuJWndxLcKvmBIPMf6kn2UwEE6jFoON8a', 'user', 'USER');
